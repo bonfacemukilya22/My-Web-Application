@@ -1,0 +1,17 @@
+  h1{
+      text-decoration: double underline;
+      background-color: aqua;
+      text-align: center;
+  }
+  li{
+      color: black;
+  }
+  ul{
+      background-color: #d02a96;
+      font-family: Chandas;
+  }
+  h3{
+      font-family: Chandas;
+      font-size: 18px;
+      color: blue;
+  }

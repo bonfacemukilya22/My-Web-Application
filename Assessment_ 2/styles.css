@@ -1,0 +1,35 @@
+h1{
+    text-decoration: double underline;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+a{
+    background-color:greenyellow;
+}
+hr{
+    background-color: blue;
+}
+form{
+    font-family:Dialog;
+    font-size:17px;
+    width: 75%;
+    background-color:lightblue;
+    color: red;
+    border:dotted 2px black;
+    padding:5px ;
+    border-radius: 20px;
+
+}
+table{
+    border:dotted 2px black;
+    background-color: black;
+    color: white;
+    width: 75%;
+
+}
+li{
+    background-color:white;
+    color:blue;
+    font-family: aakar;
+}

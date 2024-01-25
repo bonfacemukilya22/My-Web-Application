@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        h1{
+            text-decoration: underline
+            blue;font-size: 23px;
+            color: blue;
+            font-family: Chandas;
+            text-align: center;
+            background-color:lightgreen;
+                    }
+        h3{
+            text-decoration: underline;
+            color: blue;
+            text-align: center;
+            background-color: yellow;
+        }
+body{
+    background-color:lightgreen;
+}
+.3{
+        background-color: chartreuse;
+        }
+
+        /*form{*/
+        /*    background-color: blue;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<h1>This is a <b>HTML</b> form</h1>checked
+<h3>Employees Registration form</h3>
+    <form action="">
+        First Name:<input type="text"><br><br>
+        Last Name:<input type="text"><br><br>
+        Age:<input type="text"><br><br>
+        Gender:
+        <input type="Radio" name="Gender"value="Male">Male
+        <input type="Radio" name="Gender" checked value="Female">Female<br><br>
+        Marital Status:<input type="text"><br><br>
+        Nationality:
+<!--        <input type="text"><br><br>-->
+<!--        Location:<input type="text"><br><br>-->
+        <select name="dropdown">
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Somalia">Somalia</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Seychelles" SELECTED>Seychelles</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Portugal">Portugal</option>
+             <option value="Australia">Australia</option>
+        </select><br>br
+        Location:
+        <input type="Checkbox"name="Location"value="Nairobi"checked>Nairobi
+        <input type="Checkbox"name="Location"value="Mombasa">Mombasa
+        <input type="Checkbox"name="Location"value="Kitale">Kitale
+        <input type="Checkbox"name="Location"value="Eldoret">Eldoret
+        <input type="Checkbox"name="Location"value="Machakos">Machakos<br><br>
+        <input type="Submit"VALUE="SAVE">
+        <input type="Reset"value="UPDATE">
+
+    </form>
+<h3>LOGIN FORM</h3>
+<form action="">
+    Username:<input type="text"VALUE=""placeholder="Enter username here"><br><br>
+    Password:<input type="text" value=""placeholder="Enter Password here"><br><br>
+      Gender:
+        <input type="Radio" name="Gender"value="Male">Male
+        <input type="Radio" name="Gender" checked value="Female">Female<br><br>
+    <input type="Submit" value="LOGIN">
+</form>
+<h3>Student Registration Form</h3>
+<form action="" class="3">
+    First Name:<input type="text"><br><br>
+    Last Name:<input type="text"><br><br>
+    Class:
+    <input type="Radio"name="class" checked value="Form 1">Form 1
+    <input type="Radio"name="class"value="Form 2">Form 2
+    <input type="Radio"name="class"value="Form 3">Form 3
+    <input type="Radio"name="class"value="Form 4">Form 4 <br><br>
+
+    Marital Status:
+    <input type="checkbox"name="Marital Status" checked value="Single">Single
+    <input type="checkbox"name="Marital Status"value="Married">Married
+    <input type="checkbox"name="Marital Status"value="Divorced">Divorced
+    <input type="checkbox"name="Marital Status"value="Complicated">Complicated <br><br>
+    Hobbies:
+    <input type="checkbox"name="Hobbies" value="Volleyball">Volleyball
+    <input type="checkbox"name="Hobbies" checked value="Soccer">Soccer
+    <input type="checkbox"name="Hobbies" value="Reading">Reading <br><br>
+    County:
+    <select name="dropdown">
+        <option value="Nairobi">Nairobi</option>
+         <option value="Mombasa">Mombasa</option>
+         <option value="Eldoret">Eldoret</option>
+         <option value="Machakos">Machakos</option>
+         <option value="Naivasha">Naivasha</option>
+         <option value="Wajir">Wajir</option>
+         <option value="Turkana">Turkana</option>
+    </select><br><br>
+<!--            op-->
+</form>
+</body>
+</html>
