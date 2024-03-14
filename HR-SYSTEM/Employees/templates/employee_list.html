@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>EMPLOYEE LIST</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+<h2>This the data stored about the company...</h2>
+
+<table border="2"bgcolor="#deb887">
+    <thead>
+    <tr style="background-color: black;color: white">
+        <td>FullName</td>
+        <td>Mobile</td>
+        <td>Position</td>
+        <td>Email</td>
+        <td>Emp_code</td>
+        <td>Update</td>
+        <td>Delete</td>
+        <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for employee in employee_list %}
+        <tr style="background-color: #ffc720;color: blue">
+            <td>{{employee.FullName}}</td>
+            <td>{{employee.MobileNumber}}</td>
+            <td>{{employee.Position}}</td>
+            <td>{{employee.Email}}</td>
+            <td>{{employee.Emp_code}}</td>
+            <td>
+                <a href="{% url 'employee_update' employee.id %}"><button style="background-color: blueviolet">UPDATE</button></a>
+            </td>
+            <td>
+                <a href="{% url 'employee_delete' employee.id %}"><button style="background-color: red">DELETE</button></a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+<br>
+<a href="{%url 'employee_form.html'%}"><button style="background-color: blue">ADD NEW EMPLOYEE</button></a>
+<script src="../static/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

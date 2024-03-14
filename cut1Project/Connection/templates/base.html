@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.2-dist/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Online Examination</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="my navbar">
+      <ul class="navbar-nav me-auto" >
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home'%}"style="color: white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'contact'%}"style="color: white">Teacher</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'student'%}"style="color: white">student</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'admin'%}"style="color: white">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'admin'%}"style="color: white">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register'%}"style="color: white">register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+{% if messages %}
+  {% for message in messages%}
+    <p style="color: #0b5ed7;font-size: 30px">{{message}}</p>
+
+  {% endfor %}
+{% endif %}
+
+{% block content%}
+
+{% endblock%}
+</body>
+</html>

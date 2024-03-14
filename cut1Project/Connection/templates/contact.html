@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{% block content%}
+<div class="bony"style="text-align: center">
+<h1>Welcome to my contact page</h1>
+    <br>
+    <p style="color: blue;text-decoration: double underline">Fill in the form below</p>
+    <form action="">
+{%csrf_token%}
+        {{form.as_p}}
+<button type="submit"name="submit">SUBMIT</button>
+    </form>
+<p>
+
+<hr>
+
+      <button class="btn btn-success">Contact us Now</button>
+</div>
+
+
+<!--    <form action="">-->
+
+<!--        {{form.as_p}}-->
+<!--        <button type="submit"name="save">SUBMIT</button>-->
+<!--    </form>-->
+
+
+{% endblock%}

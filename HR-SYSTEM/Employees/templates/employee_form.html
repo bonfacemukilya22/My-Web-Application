@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employees Form</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="form" style="text-align: center;border: solid;border-radius: 10px;width: 20%;background-color: blue;margin-left: 600px;)">
+    <h1 style="text-decoration: underline;background-color: deeppink;border-radius: 10px">My Employees Form</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <a href="{% url 'employee_list.html'%}"><button style="background-color: blueviolet">BACK TO LIST</button></a>
+    <button type="submit" name="save" style="background-color: blueviolet">SUBMIT</button>
+</form>
+</div>
+
+
+<script src="../static/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
